@@ -1,0 +1,306 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+* ::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: "Arial" !important;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #111315;
+}
+
+.sidebar {
+    display: inline-block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 256px;
+    height: 100%;
+    min-height: 100%;
+    background: linear-gradient(0deg, #131517, #131517), linear-gradient(0deg, #1D1F20, #1D1F20);
+    border-right: 1px solid #1D1F20;
+}
+
+.logo {
+    width: 142px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 57px;
+}
+
+.sidebar-items-container {
+    margin: 24px 12px;
+}
+
+.sidebar-items ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.sidebar-item {
+    margin: 12px 0;
+    padding: 12px 20px;
+    width: 232;
+    max-height: 48px;
+    border-radius: 8px;
+    display: flex;
+    gap: 12px;
+}
+
+.item-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar-title {
+    color: #A1A0A3;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.invoices-item {
+    background-color: #25262a;
+    padding: auto;
+    position: relative;
+}
+
+.invoices-item i {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    color: #e4e4e5;
+    cursor: pointer;
+}
+
+.withdraw-item {
+    background: #23F4F9;
+    box-shadow: 0px 4px 24px 0px #CCFF0126;
+}
+
+.withdraw-item .sidebar-title {
+    color: #111315 !important;
+    font-weight: 500;
+}
+
+hr {
+    width: 232px;
+    margin-top: -20px;
+    margin-left: 12px;
+    background: #A1A0A329;
+    border: 1px solid #A1A0A329;
+}
+
+div.profile {
+    display: flex;
+    gap: 14px;
+    margin: 20px;
+    font-weight: 500;
+}
+
+.profile .profile-img {
+    height: 40px;
+    width: 40px;
+}
+
+.name {
+    color: white;
+    margin-bottom: 2px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.email {
+    font-size: 12px;
+    color: #A1A0A3;
+    line-height: 16px;
+}
+
+.change-profile {
+    height: 18px;
+    width: 18px;
+}
+
+#main {
+    position: absolute;
+    left: 257px;
+    top: 0px;
+    display: inline-block;
+}
+
+div.top-bar {
+    background: linear-gradient(0deg, #131517, #131517),linear-gradient(0deg, #1D1F20, #1D1F20);
+    padding: 24px 40px;
+    border-bottom: 1px solid #1D1F20;
+}
+
+.top-bar-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: white;
+    display: inline-block;
+}
+
+.notification {
+    position: absolute;
+    right: 154px;
+    top: 28px;
+    height: 24px;
+    width: 24px;
+}
+
+.top-bar-profile {
+    display: flex;
+    position: absolute;
+    right: 40px;
+    top: 24px;
+    gap: 8px;
+}
+
+.top-bar-profile img {
+    height: 32px;
+    width: 32px;
+}
+
+.top-bar-profile span {
+    font-size: 14px;
+    color: white;
+    display: inline-block;
+    align-self: center;
+}
+
+#invoices {
+    background: #17191A;
+    margin: 20px;
+    padding: 35px 24px;
+    border-radius: 8px;
+    Height: 950px;
+    position: relative;
+}
+
+.invoices-invoices {
+    color: white;
+    font-size: 18px;
+}
+
+.fa-question-circle {
+    position: absolute;
+    top: 37px;
+    left: 112px;
+    color: #A1A0A3;
+    height: 20px;
+    width: 20px;
+}
+
+.invoices-search-box {
+    position: absolute;
+    top: 24px;
+    left: 380px;
+    width: 320px;
+    max-height: 44px;
+    padding: 0px;
+    border-radius: 8px;
+    color: #89898c;
+    background-color: #25262a;
+    padding-left: 15px;
+}
+
+.invoices-search-box * {
+    color: #89898c;
+    background-color: #25262a;
+    border: none;
+    height: 44px;
+}
+
+.invoices-search-box input {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.invoices-search-box input:focus {
+    border: none;
+    outline: none;
+}
+
+.invoices-search-box i {
+    color: #89898c;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.import-invoice {
+    position: absolute;
+    top: 24px;
+    right: 180px;
+    height: 44px;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #CCFF01;
+    border-radius: 8px;
+    color: #23F4F9;
+    background-color: #17191a;
+}
+
+.new-invoice {
+    position: absolute;
+    top: 24px;
+    right: 15px;
+    height: 44px;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #23F4F9;
+    border-radius: 8px;
+    color: #111315;
+    background-color: #23F4F9;
+}
+
+div.rows-per-page {
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+    color: white;
+}
+
+.underscore {
+    border-bottom: 1px solid #23F4F9;
+    margin-left: 8px;
+    margin-right: 5px;
+}
+
+div.pagination {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #a1a0a3;
+}
+
+.active-page {
+    height: 36px;
+    width: 32px;
+    border-radius: 8px;
+    color: #000102 !important;
+    background-color: #23F4F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

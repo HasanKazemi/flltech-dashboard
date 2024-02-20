@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+<!-- side bar -->
+    <div class="sidebar">
+        <!-- sidebar logo -->
+        <div class="logo-section">
+            <img class="logo" src="images/r10pay.png" alt="logo">
+        </div>
+
+        <!-- sidebar items -->
+        <div class="sidebar-items-container">
+            <ul>
+                <li class="sidebar-item">
+                    <img class="item-icon" src="images/dashboard.png">
+                    <span class="sidebar-title">Dashboard</span>
+                </li>
+                <li class="sidebar-item">
+                    <img class="item-icon" src="images/wallets.png">
+                    <span class="sidebar-title">Wallets</span>
+                </li>
+                <li class="sidebar-item">
+                    <img class="item-icon" src="images/gas-station.png">
+                    <span class="sidebar-title">Gas Station</span>
+                </li>
+                <li class="sidebar-item">
+                    <img class="item-icon" src="images/refferals.png">
+                    <span class="sidebar-title">Refferals</span>
+                </li>
+                <li class="sidebar-item">
+                    <img class="item-icon" src="images/refferals.png">
+                    <span class="sidebar-title">Refferals</span>
+                </li>
+                <li class="sidebar-item invoices-item">
+                    <img class="item-icon" src="images/invoices.png">
+                    <span class="sidebar-title">Invoices</span>
+                    <i class="fa fa-chevron-up"></i>
+                </li>
+                <li class="sidebar-item withdraw-item">
+                    <span class="sidebar-title">Withdraw</span>
+                </li>
+                <li class="sidebar-item">
+                    <span class="sidebar-title">Deposit</span>
+                </li>
+                <li class="sidebar-item">
+                    <img class="item-icon" src="images/transactions.png">
+                    <span class="sidebar-title">Transactions</span>
+                </li>
+                <li class="sidebar-item">
+                    <img class="item-icon" src="images/swap.png">
+                    <span class="sidebar-title">Swap</span>
+                </li>
+                <li class="sidebar-item">
+                    <img class="item-icon" src="images/security.png">
+                    <span class="sidebar-title">Security</span>
+                </li>
+                <li class="sidebar-item">
+                    <img class="item-icon" src="images/support.png">
+                    <span class="sidebar-title">Support</span>
+                </li>
+                <li class="sidebar-item">
+                    <img class="item-icon" src="images/webhook.png">
+                    <span class="sidebar-title">Webhook</span>
+                </li>
+                <li class="sidebar-item">
+                    <img class="item-icon" src="images/logs.png">
+                    <span class="sidebar-title">Logs</span>
+                </li>
+                <li class="sidebar-item">
+                    <img class="item-icon" src="images/IPNs.png">
+                    <span class="sidebar-title">IPNs</span>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- sidebar profile -->
+        <div class="profile">
+            <img class="profile-img" src="images/Ellipse 270.png">
+            <div class="name-email">
+                <p class="name">Frankie Evans</p>
+                <p class="email">Frankie@gmail.com</p>
+            </div>
+            <img class="change-profile" src="images/change profile.png">
+        </div>
+
+    </div>
+    
+    <!-- main content -->
+    <section id="main">
+
+        <!-- tap bar -->
+        <div class="top-bar">
+            <h4 class="top-bar-title">Invoices</h4>
+            <img class="notification" src="images/notification.png">
+            <div class="top-bar-profile">
+                <img src="images/Ellipse 270.png">
+                <span>Profile</span>
+            </div>
+        </div>
+
+        <!-- invoices -->
+        <div id="invoices">
+            <h6 class="invoices-invoices">Invoices</h6>
+            <i class="fa fa-question-circle"></i>
+
+            <div class="invoices-search-box">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <button class="import-invoice">+ Import Invoice</button>
+            <button class="new-invoice">+ New Invoice</button>
+
+        </div>
+
+        <!-- set rows per pages -->
+        <div class="rows-per-page">
+            <span>Rows per page </span>
+            <span class="underscore"> 10</span>
+            <i class="fa fa-chevron-down"></i>
+        </div>
+
+        <!-- pagination -->
+        <div class="pagination">
+            <i class="fa fa-chevron-left"></i>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a class="active-page" href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <i class="fa fa-chevron-right"></i>
+        </div>
+
+    </section>
+
+
+    <!-- set main width automatically with Js -->
+    <script>
+        const mainWidth = window.innerWidth - 257
+        document.getElementById("main").style.width = mainWidth + "px"
+    </script>
+
+</body>
+</html>
